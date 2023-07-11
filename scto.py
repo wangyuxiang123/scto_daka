@@ -41,8 +41,8 @@ def check(headers_str):
 
     headers["cookie"] = headers_str
     response = session.post(url=check_url, headers=headers)
-    res = json.loads(response.text)
-    print(res)
+    # res = json.loads(response.text)
+    print(response.text)
 
 
 def analysis(s: str):
